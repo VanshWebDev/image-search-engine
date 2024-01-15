@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Clicker+Script&family=Ephesis&family=Hedvig+Letters+Sans&family=Josefin+Sans&family=Karla&family=Lato:wght@300&family=Nova+Square&family=Poppins:wght@300&family=Sacramento&family=Signika+Negative:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./imageGallery.css">
+    <link rel="stylesheet" href="./imageGallery2.css">
+</head>
+<!--  -->
+<!--  -->
+<!--  -->
+
+<body>
+
+    <div class="main">
+        <section id="home">
+            <form class="form">
+                <div class="main2">
+                    <div class="logo">
+                    </div>
+
+                    <!-- <h2>gh</h2> -->
+                    <div class="main3">
+                        <input type="search" class="input" placeholder="Type your thought" spellcheck="false"><button
+                            type="submit" class="submitBtn"><i class="fa-solid fa-search"></i></button>
+                    </div>
+                    
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                    </div>
+                    
+                </div>
+                <p class="warning">Quick Suggestion</p>
+
+                <div class="sugesBtnContainer">
+                    <div class="sugesBtn sugesBtn1">
+                        <button type="button" class="btn1 birds">Birds</button>
+                        <button type="button" class="btn2 wallpaper">Wallpaper</button>
+                        <button type="button" class="btn3 phone">Phone</button>
+                        <button type="button" class="btn4 animals">Animals</button>
+                        <button type="button" class="btn5 car">Car</button>
+                    </div>
+                    <div class="sugesBtn sugesBtn2">
+                        <button type="button" class="btn6 nature">Nature</button>
+                        <button type="button" class="btn7 gym">Gym</button>
+                        <button type="button" class="btn8 bike">Bike</button>
+                        <button type="button" class="btn9 shoes">Fruits</button>
+                        <button type="button" class="btn10 ai">AI</button>
+                    </div>
+                </div>
+              
+            </form>
+
+        </section>
+
+        <div class="imageContainer">
+
+        </div>
+
+
+        <div class="showMoreContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="gooey">
+                        <!-- in="sourceGraphic" -->
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="highContrastGraphic" />
+                        <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+
+            <button id="gooey-button" class="showMore">
+                Show More
+                <span class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                </span>
+            </button>
+        </div>
+
+        <!-- Site footer -->
+
+        <footer>
+
+
+            <section class="section">
+                <ul class="socials">
+                    <li><a class="a1 fa-brands fa-github" href="https://github.com/VanshWebDev" target="_blank"></a>
+                    </li>
+                    <li><a class="a2 fa-brands fa-linkedin" href="https://www.linkedin.com/in/vansh-kumar-webdev/"
+                            target="_blank"></a></li>
+                    <li><a class="a3 fa-brands fa-instagram" href="https://www.instagram.com/devloper.mind_/"></a></li>
+                </ul>
+                <ul class="links">
+                    <li>Visit <a href="https://vanshkumar.netlify.app/" target="_blank">portfolio</a></li>
+
+                </ul>
+                <p class="legal">© 2023 All rights reserved</p>
+            </section>
+        </footer>
+
+
+    </div>
+   <a href="#home"> <button type="button" class="backToTop"></button></a>
+
+    <!-- acc  KUH4iZln24OFIWneILAXpM-MVilFtHkjKApNfawcHeY -->
+    <!-- sec  Up614KirY1TY8usEVe-FF9pT1jGRhqDsG1qiNbQUEvo -->
+    <script src="./imageGallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- <script src="/JavaScript/imageGallery2.js"></script> -->
+</body>
+
+</html>
